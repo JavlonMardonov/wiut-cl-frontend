@@ -9,7 +9,6 @@ import { useAuthVerifyOtp } from "@/auth/hooks/useAuthVerifyOtp";
 import { Form } from "@/components/_form/Form";
 import { OTPField } from "@/components/_rhf/OTP";
 import { Button } from "@/components/Button";
-import { Card } from "@/components/Card/Card";
 import { LoadingButton } from "@/components/LoadingButton/LoadingButton";
 import { AuthLayout } from "@/layout/Auth";
 
@@ -52,9 +51,6 @@ export const SmsOtp = () => {
     <AuthLayout>
       <div className="z-10 mx-auto flex w-[400px] flex-col items-center justify-center gap-8">
         <div className="flex flex-col items-center gap-6">
-          <Card className="h-12 w-12 bg-white shadow-lg">
-            <img src="/logo.png" alt="logo" />
-          </Card>
           <div className="flex flex-col items-center gap-3">
             <h1 className="text-center text-heading-5">Check your phone</h1>
             <div>

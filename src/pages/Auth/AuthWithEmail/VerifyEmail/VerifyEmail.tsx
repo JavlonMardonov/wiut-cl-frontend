@@ -2,7 +2,6 @@ import { ArrowLeft } from "lucide-react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 
 import { Button } from "@/components/Button";
-import { Card } from "@/components/Card/Card";
 import { AuthLayout } from "@/layout/Auth";
 
 export const VerifyEmail = () => {
@@ -13,9 +12,6 @@ export const VerifyEmail = () => {
     <AuthLayout>
       <div className="z-10 mx-auto flex w-[400px] flex-col items-center justify-center gap-8">
         <div className="flex flex-col items-center gap-6">
-          <Card className="h-12 w-12 bg-white shadow-lg">
-            <img src="/logo.png" alt="logo" />
-          </Card>
           <div className="flex flex-col items-center gap-3">
             <h1 className="text-center text-heading-5">Check your email</h1>
             <div>

@@ -10,7 +10,6 @@ import { Form } from "@/components/_form/Form";
 import { PasswordField } from "@/components/_rhf/Password";
 import { PhoneNumberField } from "@/components/_rhf/PhoneNumber";
 import { Button } from "@/components/Button";
-import { Card } from "@/components/Card/Card";
 import { LoadingButton } from "@/components/LoadingButton/LoadingButton";
 import { AuthLayout } from "@/layout/Auth";
 import { AuthWithGoogle } from "@/pages/Auth/AuthGoogle/AuthWithGoogle";
@@ -48,9 +47,6 @@ export const SignInWithPhone = () => {
     <AuthLayout>
       <div className="z-10 mx-auto flex w-[400px] flex-col items-center justify-center">
         <div className="flex flex-col items-center gap-6">
-          <Card className="h-12 w-12 bg-white shadow-lg">
-            <img src="/logo.png" alt="logo" />
-          </Card>
           <div className="flex flex-col items-center gap-3">
             <h1 className="text-center text-heading-5">{t("title")}</h1>
             <p className="text-center text-md text-gray">{t("description")}</p>

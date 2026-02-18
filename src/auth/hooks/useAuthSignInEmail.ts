@@ -15,6 +15,7 @@ export const useAuthSignInEmail = () => {
       const res = await http.post(endpoints.auth.sign_in_with_email, {
         email: values.email,
         password: values.password,
+        phone_number: "",
         auth_method: "email",
       });
 

@@ -37,6 +37,10 @@ export const authRoutes: RouteObject[] = [
         element: <SignUpWithEmail />,
       },
       {
+        path: "sign-up",
+        element: <SignUpWithEmail />,
+      },
+      {
         path: "email-otp",
         element: <EmailOtp />,
       },
