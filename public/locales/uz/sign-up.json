@@ -1,0 +1,16 @@
+{
+    "title": "Hisob yaratish",
+    "description": "30 kunlik bepul sinovni boshlang",
+    "nameLabel": "Ism",
+    "namePlaceholder": "Ismingizni kiriting",
+    "emailLabel": "Elektron pochta",
+    "emailPlaceholder": "Elektron pochtangizni kiriting",
+    "passwordLabel": "Parol",
+    "passwordPlaceholder": "Parolingizni kiriting",
+    "passwordRequirement": "Kamida 8 ta belgidan iborat bo'lishi kerak",
+    "signUpButtonTitle": "Ro'yxatdan o'tish",
+    "googleButtonTitle": "Google orqali ro'yxatdan o'tish",
+    "footerTitle": "Hisobingiz bormi?",
+    "urlTitle": "Kirish"
+  }
+  

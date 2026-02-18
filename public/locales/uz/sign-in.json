@@ -1,0 +1,13 @@
+{
+    "title": "Hisobingizga kiring",
+    "description": "Xush kelibsiz! Iltimos, ma'lumotlaringizni kiriting.",
+    "emailLabel": "Elektron pochta",
+    "emailPlaceholder": "Elektron pochtangizni kiriting",
+    "passwordLabel": "Parol",
+    "passwordPlaceholder": "Parolingizni kiriting",
+    "forgotPasswordTitle": "Parolingizni unutdingizmi?",
+    "signInButtonTitle": "Kirish",
+    "googleButtonTitle": "Google bilan kirish",
+    "footerTitle": "Hisobingiz yo'qmi?",
+    "urlTitle": "Ro'yxatdan o'tish"
+}

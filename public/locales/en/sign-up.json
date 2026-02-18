@@ -1,0 +1,15 @@
+{
+    "title": "Create an account",
+    "description": "Start your 30-day free trial",
+    "nameLabel": "Name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "passwordRequirement": "Must be at least 8 characters",
+    "signUpButtonTitle": "Sign Up",
+    "googleButtonTitle": "Sign up with Google",
+    "footerTitle": "Already have an account?",
+    "urlTitle": "Login"
+  }

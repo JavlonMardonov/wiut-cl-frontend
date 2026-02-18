@@ -1,0 +1,1 @@
+export { SmsOtp } from "./SmsOtp";

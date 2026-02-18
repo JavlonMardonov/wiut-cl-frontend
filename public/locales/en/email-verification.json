@@ -1,0 +1,10 @@
+{
+    "title": "Check your email",
+    "description": "We sent a verification link to",
+    "buttonTitle": "Verify email",
+    "resendText": "Didn't receive the email?",
+    "resendButton": "Click to resend",
+    "footerTitle": "Back to log in",
+    "verificationCodeLabel": "Verification code",
+    "verificationCodePlaceholder": "Enter verification code"
+}

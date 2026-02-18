@@ -1,0 +1,7 @@
+{
+    "title": "Verify phonenumber",
+    "description": "Please verify your phonenumber before sign-up",
+    "verifyPhoneNumberButton": "Verify phonenumber",
+    "footerTitle": "Already have an account",
+    "urlTitle": "Sign in"
+}

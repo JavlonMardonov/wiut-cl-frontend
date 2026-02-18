@@ -1,0 +1,41 @@
+name: 'Continuous Integration'
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+  pull_request:
+
+concurrency:
+  group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: 22.x.x
+        cache: npm
+    
+    - name: Set up PNPM
+      run: npm install -g pnpm
+
+    - name: Install dependencies
+      run: pnpm install
+    
+    - name: Lint checking
+      run: pnpm lint
+
+    - name: Build checking
+      run: pnpm build
+    
+    - name: Build Storybook checking
+      run: pnpm build:storybook

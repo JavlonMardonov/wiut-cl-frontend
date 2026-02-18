@@ -1,0 +1,13 @@
+{
+    "title": "Log in to your account",
+    "description": "Welcome back! Please enter your details.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPasswordTitle": "Forgot password",
+    "signInButtonTitle": "Sign in",
+    "googleButtonTitle": "Sign in with Google",
+    "footerTitle": "Don't have an account?",
+    "urlTitle": "Sign up"
+}

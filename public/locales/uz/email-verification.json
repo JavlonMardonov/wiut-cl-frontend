@@ -1,0 +1,10 @@
+{
+    "title": "Emailingizni tekshiring",
+    "description": "Tasdiqlash havolasini yubordik",
+    "buttonTitle": "Emailni tasdiqlash",
+    "resendText": "Xabar kelmadimi?",
+    "resendButton": "Qayta yuborish",
+    "footerTitle": "Kirish sahifasiga qaytish",
+    "verificationCodeLabel": "Tasdiqlash kodi",
+    "verificationCodePlaceholder": "Tasdiqlash kodini kiriting"
+}

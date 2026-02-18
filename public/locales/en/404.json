@@ -1,0 +1,7 @@
+{
+    "errorCode": "404 error",
+    "title": "We can't find that page",
+    "description": "Sorry, the page you are looking for doesn't exist or has been moved",
+    "goBackButton": "Go back",
+    "homeButton": "Take me home"
+}

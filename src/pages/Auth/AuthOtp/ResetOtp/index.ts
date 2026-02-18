@@ -1,0 +1,1 @@
+export { ResetOtp } from "./ResetOtp";
