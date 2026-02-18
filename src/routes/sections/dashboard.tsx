@@ -2,8 +2,7 @@ import { lazy } from "react";
 import { RouteObject } from "react-router-dom";
 
 const Dashboard = lazy(() => import("@/pages/Protected/Dashboard"));
-const Products = lazy(() => import("@/pages/Protected/Products"));
-const Clients = lazy(() => import("@/pages/Protected/Clients"));
+const LessonDetails = lazy(() => import("@/pages/Protected/LessonDetails"));
 
 export const dashboard: RouteObject[] = [
   {
@@ -13,14 +12,10 @@ export const dashboard: RouteObject[] = [
         path: "",
         element: <Dashboard />,
       },
-      {
-        path: "products",
-        element: <Products />,
-      },
-      {
-        path: "clients",
-        element: <Clients />,
-      },
     ],
+  },
+  {
+    path: "/lesson/:id",
+    element: <LessonDetails />,
   },
 ];

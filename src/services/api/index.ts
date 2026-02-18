@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const http = axios.create({
-  baseURL: "https://backend-template.qisqa.link/api",
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 http.interceptors.request.use(
@@ -49,5 +49,13 @@ export const endpoints = {
     logout: "/auth/logout",
     // refresh-token
     refresh: "/auth/refresh",
+  },
+  lessons: {
+    list: "/lessons",
+    details: (id: string) => `/lessons/${id}`,
+  },
+  progress: {
+    overview: "/progress/overview",
+    byLesson: (lessonId: string) => `/progress/lesson/${lessonId}`,
   },
 };
