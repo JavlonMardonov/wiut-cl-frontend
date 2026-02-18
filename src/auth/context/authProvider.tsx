@@ -9,10 +9,7 @@ import { AuthContext } from "./authContext";
 type ActionsType = ActionMapType<Payload>[keyof ActionMapType<Payload>];
 
 const initialState: AuthStateType = {
-  user: {
-    id: "123",
-    name: "Ibrohim",
-  },
+  user: null,
   loading: true,
 };
 

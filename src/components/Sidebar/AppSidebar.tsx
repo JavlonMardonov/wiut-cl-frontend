@@ -1,10 +1,9 @@
 import { ChevronLeft } from "@untitled-ui/icons-react";
 import * as React from "react";
 
-import { CheckDoneIcon } from "@/assets/icons/CheckDone";
-import { ClipboardIcon } from "@/assets/icons/Clipboard";
 import { HomeIcon } from "@/assets/icons/Home";
-import { StandIcon } from "@/assets/icons/Stand";
+import { ClipboardIcon } from "@/assets/icons/Clipboard";
+import { CheckDoneIcon } from "@/assets/icons/CheckDone";
 import {
   Sidebar,
   SidebarContent,
@@ -17,31 +16,24 @@ import {
 import { NavMain } from "@/components/Sidebar/NavMain";
 
 import { cn } from "../../lib/utils";
-import { Avatar, AvatarFallback, AvatarImage } from "../Avatar";
-import { Badge } from "../Badge";
 import { Button } from "../Button";
 
 const data = {
   navMain: [
     {
-      title: "Asosiy sahifa",
+      title: "Dashboard",
       url: "/dashboard",
       icon: HomeIcon,
       isActive: true,
     },
     {
-      title: "Ish rejam",
-      url: "#",
-      icon: StandIcon,
-    },
-    {
-      title: "Hisobotlarim",
-      url: "#",
+      title: "Lessons",
+      url: "/dashboard",
       icon: ClipboardIcon,
     },
     {
-      title: "Topshiriqlarim",
-      url: "#",
+      title: "Progress",
+      url: "/dashboard",
       icon: CheckDoneIcon,
     },
   ],
@@ -77,21 +69,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
               className="m-0 p-0 hover:bg-white hover:text-gray-900"
             >
               <div className="flex flex-row space-x-3">
-                <Avatar>
-                  <AvatarImage
-                    src="https://github.com/shadcn.png"
-                    alt="@shadcn"
-                  />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-                <Badge className="absolute left-[18px] top-[34px] h-[10px] w-[10px] rounded-full border-[1.5px] border-white bg-success-500 p-0" />
-
                 <div className="grid flex-1 text-left text-sm">
                   <span className="truncate font-semibold text-text-primary">
-                    Azimov Samandar
-                  </span>
-                  <span className="truncate text-xs font-normal text-text-tertiary">
-                    Soy bo‘yi MFY
+                    WIUT Commercial Law
                   </span>
                 </div>
               </div>

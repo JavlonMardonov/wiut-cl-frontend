@@ -25,6 +25,10 @@ export const authRoutes: RouteObject[] = [
         element: <SignInWithPhone />,
       },
       {
+        path: "sign-in",
+        element: <SignInWithEmail />,
+      },
+      {
         path: "sign-in-email",
         element: <SignInWithEmail />,
       },
