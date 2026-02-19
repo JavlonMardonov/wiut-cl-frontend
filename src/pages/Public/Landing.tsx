@@ -94,13 +94,13 @@ const Landing = () => {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-indigo-50" />
+        <div className="absolute inset-0 bg-gray-50" />
         <div className="relative mx-auto max-w-5xl px-4 py-16 text-center sm:py-24 lg:py-32">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full bg-blue-100 px-4 py-1.5 text-xs font-medium text-blue-700 sm:text-sm">
             📚 Westminster International University in Tashkent
           </div>
           <h1 className="mx-auto mb-5 max-w-3xl text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl md:text-5xl lg:text-6xl">
-            Master <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Commercial Law</span> with Confidence
+            Master <span className="text-blue-600">Commercial Law</span> with Confidence
           </h1>
           <p className="mx-auto mb-8 max-w-xl text-base text-gray-500 sm:text-lg">
             Study essential modules, practice with real case studies, and track your progress — all in one place.
@@ -108,7 +108,7 @@ const Landing = () => {
           <div className="flex flex-col justify-center gap-3 sm:flex-row">
             <Link
               to={authenticated ? "/dashboard" : "/auth/sign-up"}
-              className="rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-200 hover:bg-blue-700 sm:text-base"
+              className="rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-700 sm:text-base"
             >
               {authenticated ? "Go to Dashboard" : "Start Learning — Free"}
             </Link>
@@ -196,7 +196,7 @@ const Landing = () => {
           <p className="mb-6 text-sm text-gray-500 sm:text-base">Join WIUT students already using the platform</p>
           <Link
             to={authenticated ? "/dashboard" : "/auth/sign-up"}
-            className="inline-block rounded-xl bg-blue-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-200 hover:bg-blue-700 sm:text-base"
+            className="inline-block rounded-xl bg-blue-600 px-8 py-3 text-sm font-semibold text-white hover:bg-blue-700 sm:text-base"
           >
             {authenticated ? "Go to Dashboard" : "Get Started — It's Free"}
           </Link>
