@@ -29,6 +29,7 @@ const TYPE_ICONS: Record<string, string> = {
   STATUTES: "📊",
   PRACTICE_QUESTIONS: "❓",
   SUMMARY: "📋",
+  CUSTOM: "✏️",
 };
 
 const TYPE_LABELS: Record<string, string> = {
@@ -38,6 +39,7 @@ const TYPE_LABELS: Record<string, string> = {
   STATUTES: "Statutes & Legislation",
   PRACTICE_QUESTIONS: "Practice Questions",
   SUMMARY: "Summary & Notes",
+  CUSTOM: "Custom Content",
 };
 
 const TYPE_COLORS: Record<string, string> = {
@@ -47,6 +49,7 @@ const TYPE_COLORS: Record<string, string> = {
   STATUTES: "border-purple-200 bg-purple-50",
   PRACTICE_QUESTIONS: "border-green-200 bg-green-50",
   SUMMARY: "border-indigo-200 bg-indigo-50",
+  CUSTOM: "border-gray-200 bg-gray-50",
 };
 
 // ---------- HTML renderer ----------
@@ -259,6 +262,11 @@ function EmptyState({ text }: { text: string }) {
   );
 }
 
+function CustomContent({ content }: { content: any }) {
+  if (!content?.html) return <EmptyState text="No content yet" />;
+  return <HtmlContent html={content.html} />;
+}
+
 const RENDERERS: Record<string, any> = {
   OVERVIEW: OverviewContent,
   KEY_TERMS: KeyTermsContent,
@@ -266,6 +274,7 @@ const RENDERERS: Record<string, any> = {
   STATUTES: StatutesContent,
   PRACTICE_QUESTIONS: PracticeQuestionsContent,
   SUMMARY: SummaryContent,
+  CUSTOM: CustomContent,
 };
 
 // ---------- Main component ----------
