@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import { useAuthContext } from "@/auth/hooks/useAuthContext";
+import { PageLoading } from "@/components/PageLoading";
 
 import { notFound } from "./404";
 import { authRoutes } from "./auth";
@@ -29,7 +30,7 @@ export const Router = () => {
   const router = createBrowserRouter(routes);
 
   return (
-    <Suspense fallback="Loading...">
+    <Suspense fallback={<PageLoading />}>
       <RouterProvider router={router} />
     </Suspense>
   );
